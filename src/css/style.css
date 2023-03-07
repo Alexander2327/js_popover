@@ -1,0 +1,48 @@
+.test-popover {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 10px;
+    border: solid white;
+    margin-top: 200px;
+    padding: 20px;
+    background-color: rgb(230, 83, 83);
+    color: white;
+    font-size: 15px;
+}
+
+.popover {
+    position: absolute;
+    border: 2px solid rgb(229, 226, 226);
+    border-radius: 5px;
+    width: 250px;
+}
+
+.popover-header {
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+    margin: auto;
+    color: rgb(50, 50, 50);
+    font-size: 20px;
+}
+
+.popover-body {
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px;
+    margin: auto;
+    color: rgb(50, 50, 50);
+}
+
+.popover .popover-body::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(229, 226, 226) transparent transparent transparent;
+}
